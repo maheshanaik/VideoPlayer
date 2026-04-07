@@ -1,0 +1,21 @@
+/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Core/PlaylistDetecting.swift
+/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Core/PlaylistDetector.swift
+/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Data/Network/NetworkFetching.swift
+/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Data/Network/URLSessionNetworkClient.swift
+/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Data/Parser/AttributeParser.swift
+/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Data/Parser/MasterParser.swift
+/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Data/Parser/MasterParsing.swift
+/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Data/Parser/MediaParser.swift
+/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Data/Parser/MediaParsing.swift
+/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Data/Resolver/URLResolver.swift
+/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Data/Resolver/URLResolving.swift
+/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Data/UseCaseImpl/ParsePlaylistUseCaseImpl.swift
+/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Domain/Enums/PlaylistType.swift
+/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Domain/Models/AudioTrack.swift
+/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Domain/Models/M3U8MasterPlaylist.swift
+/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Domain/Models/M3U8MediaPlaylist.swift
+/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Domain/Models/M3U8Playlist.swift
+/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Domain/Models/Segment.swift
+/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Domain/Models/Variant.swift
+/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Domain/UseCases/ParsePlaylistUseCase.swift
+/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Public\ API/M3U8Parser.swift

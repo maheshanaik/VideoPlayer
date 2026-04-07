@@ -1,0 +1,23 @@
+{
+  "/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Data/Parser/MasterParsing.swift" : {
+    "const-values" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/MasterParsing.swiftconstvalues",
+    "dependencies" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/MasterParsing.d",
+    "diagnostics" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/MasterParsing.dia",
+    "object" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/MasterParsing.o",
+    "swift-dependencies" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/MasterParsing.swiftdeps"
+  },
+  "/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Data/Parser/MediaParser.swift" : {
+    "const-values" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/MediaParser.swiftconstvalues",
+    "dependencies" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/MediaParser.d",
+    "diagnostics" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/MediaParser.dia",
+    "object" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/MediaParser.o",
+    "swift-dependencies" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/MediaParser.swiftdeps"
+  },
+  "/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Data/Parser/MediaParsing.swift" : {
+    "const-values" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/MediaParsing.swiftconstvalues",
+    "dependencies" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/MediaParsing.d",
+    "diagnostics" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/MediaParsing.dia",
+    "object" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/MediaParsing.o",
+    "swift-dependencies" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/MediaParsing.swiftdeps"
+  }
+}

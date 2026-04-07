@@ -1,0 +1,79 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target arm64-apple-ios26.2-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name M3U8Parser
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol NetworkFetching {
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) func fetch(url: Foundation.URL) async throws -> Swift.String
+  #endif
+}
+public enum PlaylistType : Swift.Equatable {
+  case master
+  case media
+  public static func == (a: M3U8Parser.PlaylistType, b: M3U8Parser.PlaylistType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct AudioTrack {
+  public let id: Swift.String
+  public let name: Swift.String
+  public let language: Swift.String?
+  public let isDefault: Swift.Bool
+  public let url: Foundation.URL
+}
+public struct M3U8MasterPlaylist {
+  public let variants: [M3U8Parser.Variant]
+  public let audioTracks: [M3U8Parser.AudioTrack]
+}
+public struct M3U8MediaPlaylist {
+  public let segments: [M3U8Parser.Segment]
+  public let isLive: Swift.Bool
+  public let targetDuration: Swift.Double?
+  public let mediaSequence: Swift.Int?
+}
+public struct M3U8Playlist {
+  public let type: M3U8Parser.PlaylistType
+  public let master: M3U8Parser.M3U8MasterPlaylist?
+  public let media: M3U8Parser.M3U8MediaPlaylist?
+}
+public struct Segment {
+  public let duration: Swift.Double
+  public let url: Foundation.URL
+}
+public struct Variant {
+  public let bandwidth: Swift.Int
+  public let resolution: CoreFoundation.CGSize?
+  public let codecs: Swift.String?
+  public let url: Foundation.URL
+  public let audioGroupId: Swift.String?
+}
+public protocol ParsePlaylistUseCase {
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) func execute(url: Foundation.URL) async throws -> M3U8Parser.M3U8Playlist
+  #endif
+}
+public enum M3U8ParserError : Swift.Error, Swift.Equatable {
+  case emptyManifest
+  case invalidManifestHeader
+  case missingRequiredAttribute(tag: Swift.String, attribute: Swift.String)
+  case missingURIAfterTag(tag: Swift.String)
+  case invalidNumericValue(tag: Swift.String, value: Swift.String)
+  case mediaSegmentWithoutDuration
+  case noPlayableStreams
+  public static func == (a: M3U8Parser.M3U8ParserError, b: M3U8Parser.M3U8ParserError) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers final public class M3U8PlaylistParser {
+  convenience public init()
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  final nonisolated(nonsending) public func parse(url: Foundation.URL) async throws -> M3U8Parser.M3U8Playlist
+  #endif
+  @objc deinit
+}
+extension M3U8Parser.PlaylistType : Swift.Hashable {}

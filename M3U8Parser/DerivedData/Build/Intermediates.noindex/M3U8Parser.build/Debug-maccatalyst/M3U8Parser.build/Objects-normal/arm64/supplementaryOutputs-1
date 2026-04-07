@@ -1,0 +1,23 @@
+{
+  "/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Core/PlaylistDetecting.swift" : {
+    "const-values" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/PlaylistDetecting.swiftconstvalues",
+    "dependencies" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/PlaylistDetecting.d",
+    "diagnostics" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/PlaylistDetecting.dia",
+    "object" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/PlaylistDetecting.o",
+    "swift-dependencies" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/PlaylistDetecting.swiftdeps"
+  },
+  "/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Core/PlaylistDetector.swift" : {
+    "const-values" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/PlaylistDetector.swiftconstvalues",
+    "dependencies" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/PlaylistDetector.d",
+    "diagnostics" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/PlaylistDetector.dia",
+    "object" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/PlaylistDetector.o",
+    "swift-dependencies" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/PlaylistDetector.swiftdeps"
+  },
+  "/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Data/Network/NetworkFetching.swift" : {
+    "const-values" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/NetworkFetching.swiftconstvalues",
+    "dependencies" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/NetworkFetching.d",
+    "diagnostics" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/NetworkFetching.dia",
+    "object" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/NetworkFetching.o",
+    "swift-dependencies" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/NetworkFetching.swiftdeps"
+  }
+}

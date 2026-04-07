@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>12</integer>
+	<key>logs</key>
+	<dict>
+		<key>32E14087-E726-4F04-B7B6-581F9BA5E1C4</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>32E14087-E726-4F04-B7B6-581F9BA5E1C4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>M3U8Parser project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>M3U8Parser</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project M3U8Parser with scheme M3U8Parser and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>796744253.76115704</real>
+			<key>timeStoppedRecording</key>
+			<real>796744255.87737298</real>
+			<key>title</key>
+			<string>Building project M3U8Parser with scheme M3U8Parser and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>32E14087-E726-4F04-B7B6-581F9BA5E1C4</string>
+		</dict>
+		<key>DAB7AC10-3FAD-461C-A89D-110C2AB2E7D9</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>DAB7AC10-3FAD-461C-A89D-110C2AB2E7D9.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>28</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>2</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>M3U8Parser project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>M3U8Parser</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project M3U8Parser with scheme M3U8Parser and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>796744075.79355705</real>
+			<key>timeStoppedRecording</key>
+			<real>796744084.97738302</real>
+			<key>title</key>
+			<string>Building project M3U8Parser with scheme M3U8Parser and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>DAB7AC10-3FAD-461C-A89D-110C2AB2E7D9</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

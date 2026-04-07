@@ -1,0 +1,64 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildOnly"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "5101b88d1cc805591ab4b71f5a8ea9f0ff5a06d9a659d33fd548a857d794e255"
+    }
+  ],
+  "containerPath" : "/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx26.2",
+      "sdkVariant" : "iosmac",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Products",
+      "derivedDataPath" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "build",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "YES",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

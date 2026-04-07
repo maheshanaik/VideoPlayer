@@ -1,0 +1,23 @@
+{
+  "/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Domain/Enums/PlaylistType.swift" : {
+    "const-values" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/PlaylistType.swiftconstvalues",
+    "dependencies" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/PlaylistType.d",
+    "diagnostics" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/PlaylistType.dia",
+    "object" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/PlaylistType.o",
+    "swift-dependencies" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/PlaylistType.swiftdeps"
+  },
+  "/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Domain/Models/AudioTrack.swift" : {
+    "const-values" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/AudioTrack.swiftconstvalues",
+    "dependencies" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/AudioTrack.d",
+    "diagnostics" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/AudioTrack.dia",
+    "object" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/AudioTrack.o",
+    "swift-dependencies" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/AudioTrack.swiftdeps"
+  },
+  "/Users/maheshnaik/Desktop/M3U8Parser/M3U8Parser/Domain/Models/M3U8MasterPlaylist.swift" : {
+    "const-values" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/M3U8MasterPlaylist.swiftconstvalues",
+    "dependencies" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/M3U8MasterPlaylist.d",
+    "diagnostics" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/M3U8MasterPlaylist.dia",
+    "object" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/M3U8MasterPlaylist.o",
+    "swift-dependencies" : "/Users/maheshnaik/Desktop/M3U8Parser/DerivedData/Build/Intermediates.noindex/M3U8Parser.build/Debug-maccatalyst/M3U8Parser.build/Objects-normal/arm64/M3U8MasterPlaylist.swiftdeps"
+  }
+}
