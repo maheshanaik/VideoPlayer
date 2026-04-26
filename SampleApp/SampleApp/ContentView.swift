@@ -33,9 +33,7 @@ struct ContentView: View {
 
                 ScrollView {
                     VStack(spacing: 24) {
-                        header
-
-                        LazyVGrid(columns: columns, spacing: 16) {
+                        HStack(spacing: 16) {
                             ForEach(tiles) { tile in
                                 NavigationLink(value: tile) {
                                     VideoTileView(tile: tile)
