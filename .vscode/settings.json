@@ -1,10 +1,4 @@
 {
-    "editor.formatOnPaste": false,
-    "chat.agent.thinking.phrases": {
-
-        "mode": "append",
-        "phrases": []
-    },
     "github.copilot.chat.reviewSelection.instructions": [
         {
             "file": ".copilot/commit_messages.md",
