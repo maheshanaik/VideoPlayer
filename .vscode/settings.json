@@ -1,7 +1,7 @@
 {
     "github.copilot.chat.reviewSelection.instructions": [
         {
-            "file": ".copilot/commit_messages.md",
+            "file": ".copilot/commit-messages.md",
         }
     ]
 }
