@@ -12,24 +12,47 @@ struct HeroCarouselView: View {
     let manifestURL: URL
     
     @State private var currentIndex = 0
+    @State private var selection = 1
     @State private var autoScrollTimer: Timer?
     
-    private let autoScrollInterval: TimeInterval = 5.0
+    private let autoScrollInterval: TimeInterval = 2.0
+    
+    private var pageItems: [VideoContent] {
+        guard items.count > 1 else { return items }
+        return [items.last!] + items + [items.first!]
+    }
+    
+    private var pageCount: Int {
+        pageItems.count
+    }
+    
+    private var actualIndex: Int {
+        guard items.count > 1 else { return selection }
+        if selection == 0 {
+            return items.count - 1
+        } else if selection == pageCount - 1 {
+            return 0
+        } else {
+            return selection - 1
+        }
+    }
     
     var body: some View {
         VStack(spacing: 0) {
             ZStack {
-                TabView(selection: $currentIndex) {
-                    ForEach(0..<items.count, id: \.self) { index in
+                TabView(selection: $selection) {
+                    ForEach(Array(pageItems.enumerated()), id: \.offset) { index, item in
                         HeroCarouselItemView(
-                            content: items[index],
+                            content: item,
                             manifestURL: manifestURL
                         )
                         .tag(index)
                     }
                 }
                 .tabViewStyle(.page(indexDisplayMode: .never))
-                .onChange(of: currentIndex) { _ in
+                .onChange(of: selection) { newSelection in
+                    currentIndex = actualIndex
+                    handleLoopingBoundary(for: newSelection)
                     resetAutoScroll()
                 }
             }
@@ -42,6 +65,8 @@ struct HeroCarouselView: View {
             .padding(.vertical, 16)
         }
         .onAppear {
+            currentIndex = 0
+            selection = items.count > 1 ? 1 : 0
             startAutoScroll()
         }
         .onDisappear {
@@ -52,13 +77,14 @@ struct HeroCarouselView: View {
     // MARK: - Auto Scroll Methods
     
     private func startAutoScroll() {
+        guard items.count > 1 else { return }
         autoScrollTimer = Timer.scheduledTimer(withTimeInterval: autoScrollInterval, repeats: true) { _ in
             withAnimation(.easeInOut(duration: 0.5)) {
-                currentIndex = (currentIndex + 1) % items.count
+                selection += 1
             }
         }
     }
-    
+
     private func stopAutoScroll() {
         autoScrollTimer?.invalidate()
         autoScrollTimer = nil
@@ -67,6 +93,19 @@ struct HeroCarouselView: View {
     private func resetAutoScroll() {
         stopAutoScroll()
         startAutoScroll()
+    }
+    
+    private func handleLoopingBoundary(for newSelection: Int) {
+        guard items.count > 1 else { return }
+        if newSelection == 0 {
+            DispatchQueue.main.async {
+                selection = items.count
+            }
+        } else if newSelection == pageCount - 1 {
+            DispatchQueue.main.async {
+                selection = 1
+            }
+        }
     }
 }
 

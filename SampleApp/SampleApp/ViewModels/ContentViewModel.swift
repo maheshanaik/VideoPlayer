@@ -50,8 +50,8 @@ class ContentViewModel: ObservableObject {
                 self.featuredContent = featured
                 
                 // Set carousel items from trending content (can be customized)
-                self.carouselItems = [featured] + Array(trending.prefix(2))
-                
+                self.carouselItems = [featured] + Array(trending.prefix(1)) + Array(popular.prefix(1))
+
                 self.sections = [
                     ContentSection(
                         title: "Continue Watching",
