@@ -9,100 +9,80 @@ import SwiftUI
 import Player
 
 struct ContentView: View {
+    // MARK: - Constants
+    
     private let manifestURL = URL(string: "https://devstreaming-cdn.apple.com/videos/streaming/examples/adv_dv_atmos/main.m3u8")!
-    private let tiles: [VideoTile] = [
-        .init(title: "Earth Adventures", subtitle: "Documentary", color: .purple),
-        .init(title: "Future Horizon", subtitle: "Sci-Fi", color: .blue),
-        .init(title: "City Nights", subtitle: "Drama", color: .indigo),
-        .init(title: "Wild Escape", subtitle: "Adventure", color: .teal),
-        .init(title: "Ocean Tales", subtitle: "Nature", color: .green),
-        .init(title: "Skyline Chase", subtitle: "Action", color: .red)
-    ]
-
-    private let columns = [GridItem(.flexible()), GridItem(.flexible())]
-
+    
+    // MARK: - State Management
+    
+    @StateObject private var viewModel = ContentViewModel()
+    
+    // MARK: - Body
+    
     var body: some View {
         NavigationStack {
             ZStack {
+                // Background
                 LinearGradient(
-                    colors: [.black, .gray.opacity(0.9)],
-                    startPoint: .top,
-                    endPoint: .bottom
+                    colors: [.black, .black.opacity(0.95)],
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing
                 )
                 .ignoresSafeArea()
-
-                ScrollView {
-                    VStack(spacing: 24) {
-                        HStack(spacing: 16) {
-                            ForEach(tiles) { tile in
-                                NavigationLink(value: tile) {
-                                    VideoTileView(tile: tile)
-                                }
-                                .buttonStyle(.plain)
-                            }
-                        }
-                        .padding(.horizontal)
-                    }
-                    .padding(.vertical)
-                }
+                
+                // Content State
+                contentStateView
             }
-            .navigationTitle("Featured")
-            .navigationBarTitleDisplayMode(.large)
-            .navigationDestination(for: VideoTile.self) { _ in
+            .navigationDestination(for: VideoContent.self) { _ in
                 HLSPlayerView(manifestURL: manifestURL)
                     .navigationBarHidden(true)
             }
         }
     }
-
-    private var header: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text("Now Streaming")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .foregroundColor(.white)
-
-            Text("Tap a title to watch the same featured stream.")
-                .foregroundColor(.white.opacity(0.8))
-                .font(.subheadline)
-        }
-        .padding(.horizontal)
-    }
-}
-
-private struct VideoTile: Identifiable, Hashable {
-    let id = UUID()
-    let title: String
-    let subtitle: String
-    let color: Color
-}
-
-private struct VideoTileView: View {
-    let tile: VideoTile
-
-    var body: some View {
-        ZStack(alignment: .bottomLeading) {
-            RoundedRectangle(cornerRadius: 18, style: .continuous)
-                .fill(tile.color.gradient)
-                .frame(height: 190)
-
-            VStack(alignment: .leading, spacing: 6) {
-                Text(tile.title)
-                    .font(.headline)
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-                    .lineLimit(2)
-
-                Text(tile.subtitle)
-                    .font(.subheadline)
-                    .foregroundColor(.white.opacity(0.8))
+    
+    // MARK: - Content State View
+    
+    @ViewBuilder
+    private var contentStateView: some View {
+        switch viewModel.viewState {
+        case .loading:
+            ContentLoadingView()
+        case .success:
+            mainContentView
+        case .error(let message):
+            ContentErrorView(message: message) {
+                viewModel.refreshContent()
             }
-            .padding()
         }
-        .shadow(color: .black.opacity(0.25), radius: 12, x: 0, y: 8)
+    }
+    
+    // MARK: - Main Content View
+    
+    private var mainContentView: some View {
+        ScrollView(.vertical, showsIndicators: false) {
+            VStack(spacing: 0) {
+                if !viewModel.carouselItems.isEmpty {
+                    HeroCarouselView(
+                        items: viewModel.carouselItems,
+                        manifestURL: manifestURL
+                    )
+                    .frame(height: 450)
+                    .padding(.bottom, 32)
+                }
+                
+                TopNavigationBarView()
+                    .padding(.horizontal)
+                    .padding(.bottom, 24)
+                
+                ForEach(viewModel.sections) { section in
+                    ContentSectionView(section: section, manifestURL: manifestURL)
+                        .padding(.bottom, 32)
+                }
+            }
+            .padding(.vertical, 0)
+        }
     }
 }
-
 
 #Preview {
     ContentView()
